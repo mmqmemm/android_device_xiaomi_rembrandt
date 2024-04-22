@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     FrameworksResXagaPro \
     FrameworksResXagaProIn \
     NfcOverlayXaga \
+    NfcOverlayXagaPro \
     SettingsProviderOverlayXagaCn \
     SettingsProviderOverlayXaga \
     SettingsProviderOverlayXagaIn \
@@ -53,7 +54,6 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.xaga_product.rc \
     init.xaga.rc
 
 # Sensors

@@ -5,13 +5,6 @@
 //
 
 prebuilt_etc {
-    name: "init.xaga_product.rc",
-    src: "init.xaga_product.rc",
-    sub_dir: "init",
-    product_specific: true,
-}
-
-prebuilt_etc {
     name: "init.xaga.rc",
     src: "init.xaga.rc",
     sub_dir: "init",

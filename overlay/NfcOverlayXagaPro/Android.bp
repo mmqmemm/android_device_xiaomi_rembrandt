@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "NfcOverlayXaga",
+    name: "NfcOverlayXagaPro",
     device_specific: true,
 }
