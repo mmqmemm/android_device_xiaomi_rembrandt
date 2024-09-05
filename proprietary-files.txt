@@ -610,8 +610,8 @@ vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc
 vendor/lib64/libmfido_isee.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc_isee.so:vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc_isee.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -662,7 +662,7 @@ vendor/lib64/secure_element-impl.so
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6895.so
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 
 # Soter
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
