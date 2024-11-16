@@ -670,6 +670,9 @@ vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
 vendor/etc/vintf/manifest/manifest_wechat.xml
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 
+# Soter service (Tencent)
+vendor/app/SoterService/SoterService.apk
+
 # Thermal (Xiaomi)
 vendor/bin/mi_thermald
 
