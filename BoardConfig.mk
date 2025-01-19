@@ -16,14 +16,6 @@ TARGET_SCREEN_DENSITY := 560
 BOARD_BOOTLOADER_IN_UPDATE_PACKAGE := true
 BOARD_SUPER_IMAGE_IN_UPDATE_PACKAGE := true
 
-# HIDL
-ODM_MANIFEST_SKUS += \
-    xagain \
-    xagainpro
-
-ODM_MANIFEST_XAGAIN_FILES := $(DEVICE_PATH)/manifest_xagain.xml
-ODM_MANIFEST_XAGAINPRO_FILES := $(DEVICE_PATH)/manifest_xagain.xml
-
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))
