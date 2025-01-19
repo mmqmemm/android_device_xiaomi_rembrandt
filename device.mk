@@ -39,24 +39,11 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResXaga \
-    FrameworksResXagaPro \
-    FrameworksResXagaProIn \
-    NfcOverlayXaga \
-    NfcOverlayXagaPro \
-    SettingsProviderOverlayXagaCn \
-    SettingsProviderOverlayXaga \
-    SettingsProviderOverlayXagaIn \
-    SettingsProviderOverlayXagaProCn \
-    SettingsProviderOverlayXagaPro \
-    SettingsProviderOverlayXagaProIn \
-    SystemUIResXaga \
-    WifiOverlayXaga \
-    WifiOverlayXagaCn \
-    WifiOverlayXagaIn \
-    WifiOverlayXagaPro \
-    WifiOverlayXagaProCn \
-    WifiOverlayXagaProIn
+    FrameworksResRembrandt \
+    NfcOverlayRembrandt \
+    SettingsProviderOverlayRembrandt \
+    SystemUIResRembrandt \
+    WifiOverlayRembrandt \
 
 # Rootdir
 PRODUCT_PACKAGES += \

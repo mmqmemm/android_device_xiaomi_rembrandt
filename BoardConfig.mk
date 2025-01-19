@@ -29,7 +29,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit the proprietary files
-include vendor/xiaomi/xaga/BoardConfigVendor.mk
+include vendor/xiaomi/rembrandt/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/miuicamera-rembrandt/BoardConfig.mk
