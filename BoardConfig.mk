@@ -1,16 +1,16 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/xaga
+DEVICE_PATH := device/xiaomi/rembrandt
 
 # Inherit from mt6895-common
 include device/xiaomi/mt6895-common/BoardConfigCommon.mk
 
 # Display
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 560
 
 # Fastboot package
 BOARD_BOOTLOADER_IN_UPDATE_PACKAGE := true
@@ -42,4 +42,4 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 include vendor/xiaomi/xaga/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/miuicamera-xaga/BoardConfig.mk
+-include vendor/xiaomi/miuicamera-rembrandt/BoardConfig.mk

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,10 +8,10 @@
 $(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 
 # Inherit firmware
-$(call inherit-product-if-exists, vendor/firmware/xaga/firmware.mk)
+$(call inherit-product-if-exists, vendor/firmware/rembrandt/firmware.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-xaga/device.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-rembrandt/device.mk)
 
 # Fastboot package
 PRODUCT_BUILD_SUPER_PARTITION := true
@@ -79,4 +79,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/xaga/xaga-vendor.mk)
+$(call inherit-product, vendor/xiaomi/rembrandt/rembrandt-vendor.mk)
