@@ -18,10 +18,6 @@ PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_FASTBOOT_TEMPLATE_ZIP := $(LOCAL_PATH)/prebuilts/fastboot.zip
 PRODUCT_FASTBOOT_IMAGES_PATH := images
 
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
