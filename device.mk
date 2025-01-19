@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.xaga.rc
+    init.rembrandt.rc \
+    init.project.rc
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31

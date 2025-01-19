@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The LineageOS Project
+# Copyright (C) 2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,13 +24,3 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     user nfc
     group nfc drmrpc system
     disabled
-
-on boot && property:ro.boot.product.hardware.sku=xaga
-    enable mtk_secure_element_hal_service
-    enable vendor.secure_element
-    enable vendor.nfc_hal_service
-
-on boot && property:ro.boot.product.hardware.sku=xagapro
-    enable mtk_secure_element_hal_service
-    enable vendor.secure_element
-    enable vendor.nfc_hal_service
