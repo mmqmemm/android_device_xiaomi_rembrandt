@@ -31,7 +31,7 @@ vendor.mtk.camera.app.fd.video=1
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|960|200|local:4627039422300187648
+persist.vendor.fingerprint.sensor_location=1440|1300|115|local:4627039422300187648
 
 # FM Radio
 ro.vendor.fm.platform=connac2x
