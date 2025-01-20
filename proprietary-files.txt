@@ -152,7 +152,6 @@ vendor/lib64/mt6895/libcamalgo.ainr.so;SYMLINK=vendor/lib64/libcamalgo.ainr.so
 vendor/lib64/mt6895/libcamalgo.ais2.bss.so;SYMLINK=vendor/lib64/libcamalgo.ais2.bss.so
 vendor/lib64/mt6895/libcamalgo.ais2.mfnr.so;SYMLINK=vendor/lib64/libcamalgo.ais2.mfnr.so
 vendor/lib64/mt6895/libcamalgo.ais2.mstm.so;SYMLINK=vendor/lib64/libcamalgo.ais2.mstm.so
-vendor/lib64/mt6895/libcamalgo.ais2.so;SYMLINK=vendor/lib64/libcamalgo.ais2.so
 vendor/lib64/mt6895/libcamalgo.bss.so;SYMLINK=vendor/lib64/libcamalgo.bss.so
 vendor/lib64/mt6895/libcamalgo.fus.so;SYMLINK=vendor/lib64/libcamalgo.fus.so
 vendor/lib64/mt6895/libcamalgo.lsc.so;SYMLINK=vendor/lib64/libcamalgo.lsc.so
@@ -321,10 +320,6 @@ vendor/lib64/libArcNetMtk.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
-vendor/lib64/libSuperSensor.so
-vendor/lib64/libSuperSensorCPU.so
-vendor/lib64/libSuperSensorProcessor.so
-vendor/lib64/lib_sr_models.so
 vendor/lib64/libaaa_gma.so
 vendor/lib64/libai_pq.so
 vendor/lib64/libai_sdr2hdr.so
@@ -335,17 +330,14 @@ vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_calibration_parser.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_supervq.so
-vendor/lib64/libarcbokeh.preview.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
-vendor/lib64/libarcsoft_dualcam_refocus_image.so
-vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_hdr_detection.so
-vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_high_dynamic_range_v5.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_mf_superresolution.so
-vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
+vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_supernight.so
 vendor/lib64/libbeauty_face_interface.so
@@ -367,7 +359,6 @@ vendor/lib64/libcamalgo.vsdofUtil.so
 vendor/lib64/libcamalgo.warp.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcameraplatforminfoxiaomi.so
-vendor/lib64/libcamerasensorinfoxiaomi.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libfeature.hdr10.so
@@ -383,7 +374,6 @@ vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmibokeh_845_video.so
 vendor/lib64/libmibokeh_mt6873.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmpbase.so
@@ -395,7 +385,6 @@ vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/librgbwlightsensor.so
-vendor/lib64/libsdk_sr.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
@@ -425,10 +414,22 @@ vendor/lib64/libmialgoengine.so|0e1c70fb6220154096a9e8c842d20485f4d477a8
 vendor/lib64/libmialgoengine2.so|17f87c6aaf130aa3520eecfd4ee45abd796853da
 
 # Camera (Configs)
+vendor/etc/camera/ai_scene.bin
+vendor/etc/camera/anc.bin
+vendor/etc/camera/com.xiaomi.dcal.wu.golden
+vendor/etc/camera/deblur_sd_opencl_binary.bin
+vendor/etc/camera/deblur_sd_opencl_params.bin
+vendor/etc/camera/deblur_txt_apu.bin
 vendor/etc/camera/ldc/intsense_config_undistort.bin
 vendor/etc/camera/ldc/ldc_cap_cache
 vendor/etc/camera/ldc/ldc_cap_model
 vendor/etc/camera/ldc/ldc_cap_policy
+vendor/etc/camera/miai_psn_config.yaml
+vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_mdla30.dla
+vendor/etc/camera/sceneDetection.xml
+vendor/etc/camera/svq_cache
+vendor/etc/camera/video_bokeh_apu_front_20210413.bin
+vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/xiaomi/dualbokehsnapshot.json
 vendor/etc/camera/xiaomi/frontbokehsnapshot.json
 vendor/etc/camera/xiaomi/frontsinglesnapshot.json
@@ -441,32 +442,6 @@ vendor/etc/camera/xiaomi/superhdsnapshot.json
 vendor/etc/camera/xiaomi/superlowlightsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/xiaomi/uwsuperlowlightshot.json
-vendor/etc/camera/CFR_para_HD.bin
-vendor/etc/camera/CFR_para_M.bin
-vendor/etc/camera/CFR_para_T.bin
-vendor/etc/camera/CFR_para_UW.bin
-vendor/etc/camera/CFR_para_W.bin
-vendor/etc/camera/ai_scene.bin
-vendor/etc/camera/almalence_sr_params_UW_upscale.config
-vendor/etc/camera/almalence_sr_params_tele.config
-vendor/etc/camera/almalence_sr_params_wide.config
-vendor/etc/camera/anc.bin
-vendor/etc/camera/apu_miai_preview.bin
-vendor/etc/camera/cal_w_uw_L16_golden_108m
-vendor/etc/camera/cal_w_uw_L16_golden_64m_i
-vendor/etc/camera/cal_w_uw_L16_golden_64m_ii
-vendor/etc/camera/deblur_sd_opencl_binary.bin
-vendor/etc/camera/deblur_sd_opencl_params.bin
-vendor/etc/camera/deblur_txt_apu.bin
-vendor/etc/camera/miai_psn_config.yaml
-vendor/etc/camera/mibokeh_mt6873_opencl.bin
-vendor/etc/camera/mibokeh_mt6873_parameter.bin
-vendor/etc/camera/quantize_mtk_0.00246_1800-360620_singleinput_bs1_1285.dla
-vendor/etc/camera/sceneDetection.xml
-vendor/etc/camera/sr_params.xml
-vendor/etc/camera/svq_cache
-vendor/etc/camera/video_bokeh_apu_front_20210413.bin
-vendor/etc/camera/vidhance_calibration
 
 # Camera (Database)
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6895/ParameterDB_ae.db;SYMLINK=vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db;MAKE_COPY_RULE_ONLY
@@ -503,7 +478,6 @@ vendor/lib64/com.xiaomi.plugin.arcsoftsr.so
 vendor/lib64/com.xiaomi.plugin.capbokeh.so
 vendor/lib64/com.xiaomi.plugin.dc.so
 vendor/lib64/com.xiaomi.plugin.depurple.so
-vendor/lib64/com.xiaomi.plugin.hdr.so
 vendor/lib64/com.xiaomi.plugin.ldc.so
 vendor/lib64/com.xiaomi.plugin.memcpy.so
 vendor/lib64/com.xiaomi.plugin.miaideblur.so
@@ -513,11 +487,9 @@ vendor/lib64/com.xiaomi.plugin.mifragment.so
 vendor/lib64/com.xiaomi.plugin.misegment.so
 vendor/lib64/com.xiaomi.plugin.rawsuperlight.so
 vendor/lib64/com.xiaomi.plugin.skinbeautifier.so
-vendor/lib64/com.xiaomi.plugin.sr.so
 vendor/lib64/com.xiaomi.plugin.superlowlight.so
 vendor/lib64/com.xiaomi.plugin.supernight.so
 vendor/lib64/com.xiaomi.plugin.swflip.so
-vendor/lib64/com.xiaomi.plugin.tetrassr.so
 
 # Camera (Sensors)
 vendor/lib64/mt6895/mtk000_mipi_raw_IdxMgr.so;SYMLINK=vendor/lib64/mtk000_mipi_raw_IdxMgr.so
