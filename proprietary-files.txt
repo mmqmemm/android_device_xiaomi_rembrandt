@@ -1,6 +1,10 @@
 # All unpinned blobs below are extracted from rembrandt-user 14 SP1A.210812.016 V816.0.12.0.UMMCNXM release-keys
 
-# Audio Configs
+# Audio
+vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6895.so
+vendor/lib64/libmisound.so
+vendor/lib64/libmisoundcrossfade.so
+vendor/lib64/libaudio_param_parser-vnd.so
 vendor/etc/audio_param/AudioParamOptions_vext.xml
 vendor/etc/audio_param/FV-SAM-MTKXX.dat
 vendor/etc/audio_param/PlaybackVolAna_AudioParam.xml
@@ -8,58 +12,29 @@ vendor/etc/audio_param/PlaybackVolAna_CeRegion_AudioParam.xml
 vendor/etc/audio_param/PlaybackVolDigi_AudioParam.xml
 vendor/etc/audio_param/PlaybackVolDigi_CeRegion_AudioParam.xml
 vendor/etc/audio_param/RecordFIR_AudioParam.xml
-vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordVol_AudioParam.xml
 vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml
+vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml
 vendor/etc/audio_param/Record_AudioParam.xml
 vendor/etc/audio_param/Record_ParamUnitDesc.xml
-vendor/etc/audio_param/RingbackVol_AudioParam.xml
 vendor/etc/audio_param/SmartPa_AudioParam.xml
 vendor/etc/audio_param/SmartPa_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechGeneral_AudioParam.xml
 vendor/etc/audio_param/SpeechVol_AudioParam.xml
-vendor/etc/audio_param/VoIPVol_AudioParam.xml
 vendor/etc/audio_param/VoIPv2_AudioParam.xml
+vendor/etc/audio_param/VoIPVol_AudioParam.xml
 vendor/etc/audio_param/VoWDspAec_AudioParam.xml
 vendor/etc/audio_param/VoWEngineFeature_AudioParam.xml
 vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml
-vendor/etc/audio_param/tfa98xx_music.bin
-vendor/etc/audio_param/tfa98xx_ringtone.bin
-vendor/etc/audio_param/tfa98xx_voice.bin
+vendor/etc/misound_res_headphone.bin
+vendor/etc/misound_res_spk.bin
+vendor/firmware/tfa98xx.cnt
 vendor/etc/smartpa_param/tfa98xx_device.bin
 vendor/etc/smartpa_param/tfa98xx_ringtone.bin
 vendor/etc/smartpa_param/tfa98xx_voice.bin
-vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/etc/a2dp_in_audio_policy_configuration.xml
-vendor/etc/audio_device.xml
-vendor/etc/audio_effects.xml
-vendor/etc/audio_em.xml
-vendor/etc/audio_policy.conf
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_configuration_a2dp_offload_disabled_cg_enabled.xml
-vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml
-vendor/etc/audio_policy_configuration_a2dp_offload_enable_cg_enable.xml
-vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/aurisys_config.xml
-vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
-vendor/etc/bluetooth_offload_audio_policy_configuration.xml
-vendor/etc/bluetooth_ums_offload_audio_policy_configuration.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/usb_audio_accessory_only_policy_configuration.xml
-vendor/etc/usb_audio_policy_configuration.xml
-
-# Audio Hardware
-vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6895.so
-vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/libmisound.so
-vendor/lib64/libmisoundcrossfade.so
-
-# Audio Firmware
-vendor/firmware/tfa98xx.cnt
+vendor/etc/audio_param/tfa98xx_music.bin
+vendor/etc/audio_param/tfa98xx_ringtone.bin
+vendor/etc/audio_param/tfa98xx_voice.bin
 
 # Camera
 vendor/bin/hw/mt6895/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
@@ -71,6 +46,7 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so
 vendor/lib64/mt6895/lib3a.ae.core.so;SYMLINK=vendor/lib64/lib3a.ae.core.so
 vendor/lib64/mt6895/lib3a.ae.so;SYMLINK=vendor/lib64/lib3a.ae.so
 vendor/lib64/mt6895/lib3a.af.assist.models1d.so;SYMLINK=vendor/lib64/lib3a.af.assist.models1d.so
+vendor/lib64/mt6895/lib3a.af.assist.models2d.so;SYMLINK=vendor/lib64/lib3a.af.assist.models2d.so
 vendor/lib64/mt6895/lib3a.af.assist.so;SYMLINK=vendor/lib64/lib3a.af.assist.so
 vendor/lib64/mt6895/lib3a.af.assist.utils.so;SYMLINK=vendor/lib64/lib3a.af.assist.utils.so
 vendor/lib64/mt6895/lib3a.af.core.so;SYMLINK=vendor/lib64/lib3a.af.core.so
