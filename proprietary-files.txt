@@ -325,6 +325,7 @@ vendor/lib64/libai_pq.so
 vendor/lib64/libai_sdr2hdr.so
 vendor/lib64/libai_sdr2hdr_auth.so
 vendor/lib64/libaispq.so
+vendor/lib64/libalgobaseutils.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_calibration_parser.so
@@ -332,6 +333,8 @@ vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_supervq.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_distortion_correction.so
+vendor/lib64/libarcsoft_dualcam_refocus_image.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range_v5.so
 vendor/lib64/libarcsoft_low_light_hdr.so
@@ -370,12 +373,17 @@ vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
 vendor/lib64/libmiai_deblur.so
 vendor/lib64/libmiai_portraitsupernight.so
+vendor/lib64/libmialgo_aio_seg.so
+vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_ie_capture.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
+vendor/lib64/libmialgo_video_seg_depth.so
 vendor/lib64/libmibokeh_mt6873.so
 vendor/lib64/libminiui.so
+vendor/lib64/libmiphone_capture_bokeh.so
+vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmtkcam_3rdcalibration.so
 vendor/lib64/libmtkcam_thirdparty.customzone.so
@@ -385,6 +393,7 @@ vendor/lib64/librelight_only.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/librgbwlightsensor.so
+vendor/lib64/libvideoBokeh.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
