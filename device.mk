@@ -43,12 +43,11 @@ PRODUCT_PACKAGES += \
     NfcOverlayRembrandt \
     SettingsProviderOverlayRembrandt \
     SystemUIResRembrandt \
-    WifiOverlayRembrandt \
+    WifiOverlayRembrandt
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.rembrandt.rc \
-    init.project.rc
+    init.rembrandt.rc
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
