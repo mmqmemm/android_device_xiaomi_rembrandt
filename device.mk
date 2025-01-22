@@ -46,10 +46,6 @@ PRODUCT_PACKAGES += \
     SystemUIResRembrandt \
     WifiOverlayRembrandt
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.rembrandt.rc
-
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
