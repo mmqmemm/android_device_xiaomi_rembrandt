@@ -46,6 +46,12 @@ PRODUCT_PACKAGES += \
     SystemUIResRembrandt \
     WifiOverlayRembrandt
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.project.rc
+
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
