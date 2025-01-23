@@ -16,10 +16,6 @@ TARGET_SCREEN_DENSITY := 560
 BOARD_BOOTLOADER_IN_UPDATE_PACKAGE := true
 BOARD_SUPER_IMAGE_IN_UPDATE_PACKAGE := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_rembrandt
-TARGET_RECOVERY_DEVICE_MODULES := libinit_rembrandt
-
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))
