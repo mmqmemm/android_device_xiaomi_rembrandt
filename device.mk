@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     FrameworksResRembrandt \
     NfcOverlayRembrandt \
     SettingsProviderOverlayRembrandt \
+    SettingsResOverlayRembrandt \
     SystemUIResRembrandt \
     WifiOverlayRembrandt
 
