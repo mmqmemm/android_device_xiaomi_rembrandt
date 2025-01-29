@@ -29,5 +29,5 @@ PRODUCT_SYSTEM_NAME := rembrandt
 PRODUCT_SYSTEM_DEVICE := rembrandt
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="rembrandt-user 14 SP1A.210812.016 V816.0.12.0.UMMCNXM release-keys" \
-    BuildFingerprint=Redmi/rembrandt/rembrandt:12/SP1A.210812.016/V816.0.12.0.UMMCNXM:user/release-keys
+    BuildDesc="rembrandt-user 14 SP1A.210812.016 V816.0.8.0.UMMCNXM release-keys" \
+    BuildFingerprint=Redmi/rembrandt/rembrandt:12/SP1A.210812.016/V816.0.8.0.UMMCNXM:user/release-keys
