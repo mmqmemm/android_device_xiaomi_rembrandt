@@ -1,14 +1,8 @@
 #
-# Copyright (C) 2025 The LineageOS Project
+# Copyright (C) 2023-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
-# Inherit from mt6895-common
-$(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
-
-# Inherit firmware
-$(call inherit-product-if-exists, vendor/firmware/rembrandt/firmware.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -18,6 +12,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_FASTBOOT_TEMPLATE_ZIP := $(LOCAL_PATH)/prebuilts/fastboot.zip
 PRODUCT_FASTBOOT_IMAGES_PATH := images
+
+# Fingerprint
+TARGET_HAS_UDFPS := false
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -40,12 +37,11 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResRembrandt \
-    NfcOverlayRembrandt \
+    FrameworksResOverlayRembrandt \
     SettingsProviderOverlayRembrandt \
     SettingsResOverlayRembrandt \
-    SystemUIResRembrandt \
-    WifiOverlayRembrandt
+    SystemUIOverlayRembrandt \
+    WifiResOverlayRembrandt
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -53,16 +49,23 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     init.project.rc
 
-# Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 31
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-# Soong namespaces
+# Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Shipping API Level
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Xiaomi Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# Inherit from mt6895-common
+$(call inherit-product, device/xiaomi/mt6895-common/mt6895.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/rembrandt/rembrandt-vendor.mk)

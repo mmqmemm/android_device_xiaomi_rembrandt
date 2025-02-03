@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2025 The LineageOS Project
+# Copyright (C) 2023-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,26 +8,33 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from rembrandt device
+# Inherit from device makefile.
 $(call inherit-product, device/xiaomi/rembrandt/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit LineageOS product
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3200
-TARGET_SCREEN_WIDTH := 1440
-TARGET_BOOT_ANIMATION_RES := 1440
+# RisingOS flags
+WITH_GMS := true
+RISING_BATTERY := 5500mAh
+RISING_DISPLAY := 1440x3200
 
-PRODUCT_BRAND := Redmi
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="MediaTek Dimensity 8200" \
+    RisingMaintainer="莫名其妙2333"
+
+PRODUCT_NAME := lineage_rembrandt
 PRODUCT_DEVICE := rembrandt
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22122RK93C
-PRODUCT_NAME := lineage_rembrandt
 
 PRODUCT_SYSTEM_NAME := rembrandt
 PRODUCT_SYSTEM_DEVICE := rembrandt
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="rembrandt-user 14 SP1A.210812.016 V816.0.8.0.UMMCNXM release-keys" \
-    BuildFingerprint=Redmi/rembrandt/rembrandt:12/SP1A.210812.016/V816.0.8.0.UMMCNXM:user/release-keys
+    BuildDesc="rembrandt-user 14 UP1A.231005.007 V816.0.8.0.UMMCNXM release-keys" \
+    BuildFingerprint=Xiaomi/rembrandt/rembrandt:14/UP1A.231005.007/V816.0.8.0.UMMCNXM:user/release-keys \
+
+
+
