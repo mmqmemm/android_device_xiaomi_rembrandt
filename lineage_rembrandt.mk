@@ -14,15 +14,6 @@ $(call inherit-product, device/xiaomi/rembrandt/device.mk)
 # Inherit LineageOS product
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# RisingOS flags
-WITH_GMS := true
-RISING_BATTERY := 5500mAh
-RISING_DISPLAY := 1440x3200
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="MediaTek Dimensity 8200" \
-    RisingMaintainer="莫名其妙2333"
-
 PRODUCT_NAME := lineage_rembrandt
 PRODUCT_DEVICE := rembrandt
 PRODUCT_MANUFACTURER := Xiaomi
