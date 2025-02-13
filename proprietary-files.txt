@@ -185,9 +185,6 @@ vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgo_video_seg_depth.so
-vendor/lib64/libmialgoengine.so
-vendor/lib64/libmialgoengine2.so
-
 vendor/lib64/libmibokeh_mt6873.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmiphone_capture_bokeh.so
@@ -518,6 +515,10 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
+# Camera (Algo Engine) - from gale_global 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
+vendor/lib64/libmialgoengine.so|0e1c70fb6220154096a9e8c842d20485f4d477a8
+vendor/lib64/libmialgoengine2.so|17f87c6aaf130aa3520eecfd4ee45abd796853da
+
 # Display
 vendor/etc/cust_color.xml
 vendor/etc/cust_silky_brightness.xml
@@ -600,6 +601,7 @@ vendor/lib64/jcos_nq_client-v1.so
 vendor/lib64/secure_element-impl.so
 
 # Sensors
+vendor/etc/sensors/hals.conf
 vendor/etc/elliptic_sensor.xml
 vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6895.so
